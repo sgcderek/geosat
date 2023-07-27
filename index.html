@@ -12,7 +12,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #f0f0f0;
+      background-color: black;
       position: relative;
     }
 
@@ -37,6 +37,10 @@
       transform-origin: center center;
       left: calc(50% - 2vmin);
       top: calc(50% - 2vmin);
+      cursor: not-allowed;
+    }
+
+    .has-link {
       cursor: pointer;
     }
 
@@ -66,15 +70,17 @@
   <div id="earth-container">
     <img src="earth.png" alt="Earth" id="earth-image">
 
-    <div class="satellite" style="background-image: url('sat_goesr.png'); transform: rotate(137deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
-    <div class="satellite-tooltip-container">
-      <div class="satellite-tooltip">
-        GOES-18 (137W°)<br>
-        Raw: 8220 MHz<br>
-        GRB: 1686.6 MHz<br>
-        HRIT: 1694.1 MHz
+    <a href="https://www.ssec.wisc.edu/data/geo/images/goes-18/latest_goes-18_rgbstr_fd.gif" target="_blank">
+      <div class="satellite has-link" style="background-image: url('sat_goesr.png'); transform: rotate(137deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
+      <div class="satellite-tooltip-container">
+        <div class="satellite-tooltip">
+          GOES-18 (137W°)<br>
+          Raw: 8220 MHz<br>
+          GRB: 1686.6 MHz<br>
+          HRIT: 1694.1 MHz
+        </div>
       </div>
-    </div>
+    </a>
 
     <div class="satellite" style="background-image: url('sat_goesn.png'); transform: rotate(109deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
     <div class="satellite-tooltip-container">
@@ -99,15 +105,17 @@
       </div>
     </div>
 
-    <div class="satellite" style="background-image: url('sat_goesr.png'); transform: rotate(75.2deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
-    <div class="satellite-tooltip-container">
-      <div class="satellite-tooltip">
-        GOES-16 (75.2W°)<br>
-        Raw: 8220 MHz<br>
-        GRB: 1686.6 MHz<br>
-        HRIT: 1694.1 MHz
+    <a href="https://www.ssec.wisc.edu/data/geo/images/goes16/latest_goes-16_rgbstr_fd.gif" target="_blank">
+      <div class="satellite has-link" style="background-image: url('sat_goesr.png'); transform: rotate(75.2deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
+      <div class="satellite-tooltip-container">
+        <div class="satellite-tooltip">
+          GOES-16 (75.2W°)<br>
+          Raw: 8220 MHz<br>
+          GRB: 1686.6 MHz<br>
+          HRIT: 1694.1 MHz
+        </div>
       </div>
-    </div>
+    </a>
 
     <div class="satellite" style="background-image: url('sat_elektro.png'); transform: rotate(14.5deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
     <div class="satellite-tooltip-container">
@@ -125,21 +133,25 @@
       </div>
     </div>
 
-    <div class="satellite" style="background-image: url('sat_msg.png'); transform: rotate(0deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
-    <div class="satellite-tooltip-container">
-      <div class="satellite-tooltip">
-        Meteosat-11 (0°)<br>
-        Raw: 1686.83 MHz
+    <a href="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBNatColourEnhncd_LowResolution.jpg" target="_blank">
+      <div class="satellite has-link" style="background-image: url('sat_msg.png'); transform: rotate(0deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
+      <div class="satellite-tooltip-container">
+        <div class="satellite-tooltip">
+          Meteosat-11 (0°)<br>
+          Raw: 1686.83 MHz
+        </div>
       </div>
-    </div>
+    </a>
 
-    <div class="satellite" style="background-image: url('sat_msg.png'); transform: rotate(0deg) rotate(180deg) translate(0, -35vmin) rotate(-45deg);"></div>
-    <div class="satellite-tooltip-container">
-      <div class="satellite-tooltip">
-        Meteosat-10 (0°)<br>
-        Raw: 1686.83 MHz
+    <a href="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSG_RGBNatColourEnhncd_LowResolution.jpg" target="_blank">
+      <div class="satellite has-link" style="background-image: url('sat_msg.png'); transform: rotate(0deg) rotate(180deg) translate(0, -35vmin) rotate(-45deg);"></div>
+      <div class="satellite-tooltip-container">
+        <div class="satellite-tooltip">
+          Meteosat-10 (0°)<br>
+          Raw: 1686.83 MHz
+        </div>
       </div>
-    </div>
+    </a>
 
     <div class="satellite" style="background-image: url('sat_qo100.png'); transform: rotate(-26deg) rotate(180deg) translate(0, -33vmin) rotate(-45deg);"></div>
     <div class="satellite-tooltip-container">
@@ -151,22 +163,26 @@
       </div>
     </div>
 
-    <div class="satellite" style="background-image: url('sat_msg.png'); transform: rotate(-45.5deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
-    <div class="satellite-tooltip-container">
-      <div class="satellite-tooltip">
-        Meteosat-9 (45.5E°)<br>
-        Raw: 1686.83 MHz
+    <a href="https://eumetview.eumetsat.int/static-images/latestImages/EUMETSAT_MSGIODC_RGBNatColourEnhncd_LowResolution.jpg" target="_blank">
+      <div class="satellite has-link" style="background-image: url('sat_msg.png'); transform: rotate(-45.5deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
+      <div class="satellite-tooltip-container">
+        <div class="satellite-tooltip">
+          Meteosat-9 (45.5E°)<br>
+          Raw: 1686.83 MHz
+        </div>
       </div>
-    </div>
+    </a>
 
-    <div class="satellite" style="background-image: url('sat_goesn.png'); transform: rotate(-61.5deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
-    <div class="satellite-tooltip-container">
-      <div class="satellite-tooltip">
-        GOES-13 (61.5E°)<br>
-        Raw: 1676 MHz<br>
-        PDR/GVAR: 1685.7 MHz
+    <a href="https://www.ssec.wisc.edu/data/geo/images/ews-g1/latest_ews-g1_01_fd.gif" target="_blank">
+      <div class="satellite has-link" style="background-image: url('sat_goesn.png'); transform: rotate(-61.5deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
+      <div class="satellite-tooltip-container">
+        <div class="satellite-tooltip">
+          GOES-13 (61.5E°)<br>
+          Raw: 1676 MHz<br>
+          PDR/GVAR: 1685.7 MHz
+        </div>
       </div>
-    </div>
+    </a>
 
     <div class="satellite" style="background-image: url('sat_insat3.png'); transform: rotate(-74deg) rotate(180deg) translate(0, -36vmin) rotate(-45deg);"></div>
     <div class="satellite-tooltip-container">
@@ -195,13 +211,15 @@
       </div>
     </div>
 
-    <div class="satellite" style="background-image: url('sat_insat3.png'); transform: rotate(-82deg) rotate(180deg) translate(0, -36vmin) rotate(-45deg);"></div>
-    <div class="satellite-tooltip-container">
-      <div class="satellite-tooltip">
-        Insat-3D (82E°)<br>
-        Raw: 4781 MHz
+    <a href="https://mausam.imd.gov.in/Satellite/3Dglobe_vis.jpg" target="_blank">
+      <div class="satellite has-link" style="background-image: url('sat_insat3.png'); transform: rotate(-82deg) rotate(180deg) translate(0, -36vmin) rotate(-45deg);"></div>
+      <div class="satellite-tooltip-container">
+        <div class="satellite-tooltip">
+          Insat-3D (82E°)<br>
+          Raw: 4781 MHz
+        </div>
       </div>
-    </div>
+    </a>
 
     <div class="satellite" style="background-image: url('sat_fy2.png'); transform: rotate(-99.5deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
     <div class="satellite-tooltip-container">
@@ -212,14 +230,16 @@
       </div>
     </div>
 
-    <div class="satellite" style="background-image: url('sat_fy4.png'); transform: rotate(-104.7deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
-    <div class="satellite-tooltip-container">
-      <div class="satellite-tooltip">
-        FengYun-4A (104.7E°)<br>
-        Raw: 7500 MHz<br>
-        LRIT: 1697 MHz
+    <a href="http://img.nsmc.org.cn/CLOUDIMAGE/FY4A/THUMBNAIL/FY4A_AGRI_DISK_CH01.jpg" target="_blank">
+      <div class="satellite has-link" style="background-image: url('sat_fy4.png'); transform: rotate(-104.7deg) rotate(180deg) translate(0, -32vmin) rotate(-45deg);"></div>
+      <div class="satellite-tooltip-container">
+        <div class="satellite-tooltip">
+          FengYun-4A (104.7E°)<br>
+          Raw: 7500 MHz<br>
+          LRIT: 1697 MHz
+        </div>
       </div>
-    </div>
+    </a>
 
     <div class="satellite" style="background-image: url('sat_gk.png'); transform: rotate(-128.2deg) rotate(180deg) translate(0, -32.5vmin) rotate(-45deg);"></div>
     <div class="satellite-tooltip-container">
@@ -254,13 +274,15 @@
       </div>
     </div>
 
-    <div class="satellite" style="background-image: url('sat_himawari.png'); transform: rotate(-140.7deg) rotate(180deg) translate(0, -36vmin) rotate(-45deg);"></div>
-    <div class="satellite-tooltip-container">
-      <div class="satellite-tooltip">
-        Himawari-9 (140.7E°)<br>
-        Raw: 18284.6 MHz
+    <a href="https://www.ssec.wisc.edu/data/geo/images/himawari09/latest-himawari09_rgb_fd.jpg" target="_blank">
+      <div class="satellite has-link" style="background-image: url('sat_himawari.png'); transform: rotate(-140.7deg) rotate(180deg) translate(0, -36vmin) rotate(-45deg);"></div>
+      <div class="satellite-tooltip-container">
+        <div class="satellite-tooltip">
+          Himawari-9 (140.7E°)<br>
+          Raw: 18284.6 MHz
+        </div>
       </div>
-    </div>
+    </a>
 
     <div class="satellite" style="background-image: url('sat_jcsat.png'); transform: rotate(-154deg) rotate(180deg) translate(0, -33vmin) rotate(-45deg);"></div>
     <div class="satellite-tooltip-container">
